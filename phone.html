@@ -1,0 +1,36 @@
+<html>
+<head>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+    <script src="https://assets.codepen.io/16327/ScrollTrigger.min.js?v=27"></script>
+    <style>
+
+        
+
+    </style>
+</head>
+<body>
+<div class="yessir" style="height: 100%; width: 100%;">
+    <img src="phone1.png" class="p1" style="height: 400x;width: 200px;">
+    
+</div>
+<script>
+  
+var help= gsap.timeline({scrollTrigger:{ trigger:".yessir",
+scrub:1,
+end:"100%",
+pin:true}}
+   
+)
+//
+help.set(".p1",{attr:{src:"phone1.png"}})
+.to(".p1",{rotationY:180})
+.set(".p1",{attr:{src:"phone2.png"}})
+
+
+
+
+
+
+</script>
+</body>
+</html>
